@@ -28,6 +28,11 @@ class PersistentTabController extends ChangeNotifier {
     notifyListeners();
   }
 
+  void change(int index){
+    _index = index;
+    notifyListeners();
+  }
+
   @override
   void dispose() {
     _isDisposed = true;
